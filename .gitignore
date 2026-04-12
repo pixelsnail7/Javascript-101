@@ -1,0 +1,5 @@
+# VS Code settings
+.vscode/
+
+# environment variables
+.env

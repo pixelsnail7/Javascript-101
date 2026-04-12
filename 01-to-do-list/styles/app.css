@@ -1,0 +1,55 @@
+#app {
+    width: 100vw;
+    height: 100vh;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 0.5rem;
+    background-color: var(--bg1);
+}
+
+#searchBox {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    gap: 0.5rem;
+    width: 100%;
+}
+
+#searchBox input, button {
+    height: 2.8rem;
+    border: none;
+    padding: 0.5rem;
+    background-color: var(--bg2);
+    color: var(--fg2);
+    font-size: 1.2rem;
+
+    &:hover {
+        background-color: var(--bg3);
+    }
+}
+
+#searchBox input[type="text"] {
+    z-index: 1;
+    width: 100%;
+    max-width: 20rem;
+    color: var(--body-fg);
+}
+
+#searchBox #dateInput {
+    position: absolute;
+    z-index: 0;
+}
+
+#searchBox button {
+    height: 2.8rem;
+    width: 2.8rem;
+
+    &:active {
+        color: var(--prime);
+        
+    }
+}
