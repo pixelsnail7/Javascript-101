@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+
+:root {
+    --body-bg: #202020;
+    --body-fg: #efefef;
+
+    --bg1: #2a2a2a;
+    --bg2: #3a3a3a;
+    --fg1: lightgray;
+
+    --prime: #9C7AFC;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'JetBrains Mono', monospace;
+}
+
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 0.5rem;
+    background-color: var(--body-bg);
+    color: var(--body-fg);
+}
+
+main {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#counter {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 0.5rem;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    border: 2px solid var(--prime);
+}
+
+#display {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 9.5rem;
+    width: 9.5rem;
+    border-radius: 0.3rem;
+    background-color: var(--bg1);
+    font-size: 3.5rem;
+}
+
+#buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#buttons button {
+    height: 3rem;
+    width: 3rem;
+    border: none;
+    border-radius: 0.2rem;
+    background-color: var(--bg1);
+    color: var(--fg1);
+    cursor: pointer;
+}
+
+#buttons button:active {
+    transform: scale(90%);
+    background-color: var(--prime);
+    transition: ease-in-out;
+}
+
+#hook {
+    height: 1rem;
+    width: 4rem;
+    border-radius: 0.3rem;
+    background-color: var(--prime);
+}
+
+menu {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 0.5rem;
+    width: 100%;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    border: 2px solid var(--prime);
+}
+
+menu button {
+    height: 3rem;
+    width: 3rem;
+    border: none;
+    border-radius: 0.3rem;
+    background-color: var(--bg1);
+    color: var(--fg1);
+    cursor: pointer
+}
+
+
+menu #countDisplay {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+    height: 3rem;
+    width: 3rem;
+    border-radius: 0.3rem;
+    background-color: var(--bg1);
+    font-size: 2rem;
+}
+
+/* Meter */
+#meter {
+    margin-bottom: 0.2rem;
+    height: 2rem;
+    width: 100%;
+    border: 2px solid var(--prime);
+    border-radius: 0.5rem;
+    background-color: var(--bg1);
+}
+
+/* Brtton */
+button:hover {
+    background-color: var(--bg2) !important;
+}
+
+
+button:active {
+    transform: scale(90%);
+    background-color: var(--prime) !important;
+    transition: ease-in-out;
+}
