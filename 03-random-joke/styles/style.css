@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+
+:root {
+    --body-bg: #202020;
+    --body-fg: #efefef;
+
+    --bg1: #2a2a2a;
+    --bg2: #3a3a3a;
+    --fg1: lightgray;
+
+    --prime: #9C7AFC;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'JetBrains Mono', monospace;
+}
+
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 0.5rem;
+    background-color: var(--body-bg);
+    color: var(--body-fg);
+}
+
+main {
+    position: relative;
+}
+
+#display {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 15rem;
+    width: 28rem;
+    overflow: auto;
+    outline: 2px solid var(--prime);
+    border-radius: 0.5rem 0.5rem 0rem 0.5rem;
+    padding: 0.5rem;
+    color: var(--prime);
+    font-size: 1.2rem;
+}
+
+#display::-webkit-scrollbar {
+    display: none;
+}
+
+#jokeBtn {
+    position: absolute;
+    right: -2px;
+    padding: 0.5rem;
+    border: 2px solid var(--prime);
+    border-radius: 0rem 0rem 0.5rem 0.5rem;
+    background-color: var(--prime);
+    color: var(--body-fg);
+    text-align: center;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+#typeContainer {
+    display: flex;
+    justify-content: space-between;
+    height: 3rem;
+    width: 28rem;
+    margin-bottom: 1rem;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    background-color: var(--bg1);
+    color: var(--fg1);
+}
+
+#typeContainer button {
+    height: 100%;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    background-color: var(--bg2);
+    color: var(--fg1);
+}
+
+#typeContainer button.active {
+    background-color: var(--prime);
+}
+
+/*  */
+#myInfo {
+    position: absolute;
+    bottom: 0.5rem;
+    right: 0.5rem;
+}
+
+#myInfo a {
+    text-decoration: none;
+    color: tomato;
+    font-weight: bold;
+}

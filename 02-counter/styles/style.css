@@ -139,3 +139,16 @@ button:active {
     background-color: var(--prime) !important;
     transition: ease-in-out;
 }
+
+/*  */
+#myInfo {
+    position: absolute;
+    bottom: 0.5rem;
+    right: 0.5rem;
+}
+
+#myInfo a {
+    text-decoration: none;
+    color: tomato;
+    font-weight: bold;
+}
