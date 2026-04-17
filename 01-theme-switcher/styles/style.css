@@ -53,3 +53,15 @@ body.dark {
 #themeTextBtn {
     cursor: default;
 }
+
+#myInfo {
+    position: absolute;
+    bottom: 0.5rem;
+    right: 0.5rem;
+}
+
+#myInfo a {
+    text-decoration: none;
+    color: tomato;
+    font-weight: bold;
+}
