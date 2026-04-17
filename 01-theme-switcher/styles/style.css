@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+
+:root {
+    --dark-body-bg: #202020;
+    --dark-body-fg: #efefef;
+    --dark-theme-btn: #958afa;
+
+    --light-body-bg: #efefef;
+    --light-body-fg: #202020;
+    --light-theme-btn: #dfbc11;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'JetBrains Mono', monospace;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 0.5rem;
+}
+
+body.light {
+    background-color: var(--light-body-bg);
+    color: var(--light-body-fg);
+}
+
+body.dark {
+    background-color: var(--dark-body-bg);
+    color: var(--dark-body-fg);
+}
+
+#themeBtn {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    height: 3rem;
+    aspect-ratio: 1/1;
+    border: none;
+    border-radius: 2rem;
+    background-color: hsl(from currentColor h s 90%);
+    color: var(--dark-theme-btn);
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+#themeTextBtn {
+    cursor: default;
+}
