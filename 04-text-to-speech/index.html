@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css' integrity='sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==' crossorigin='anonymous' referrerpolicy='no-referrer' />
+    <link rel='stylesheet' href='./styles/style.css'>
+    <title>Text to Speech</title>
+</head>
+<body>
+    <main>
+        <div id="container">
+            <div id="display" contenteditable="true"></div>
+            <div id="buttons">
+                <button id="speakBtn"><i class="fa-solid fa-volume-high"></i> speak</button>
+                <button id="pauseResumeBtn"><i class="fa-solid fa-pause"></i> pause</button>
+                <button id="cancleBtn"><i class="fa-solid fa-xmark"></i> cancle</button>
+            </div>
+        </div>
+        <menu>
+            <div class="rangeBox">
+                <label for="pitch">Pitch</label>
+                <input type="range" name="pitch" id="pitch">
+                <span>1</span>
+            </div>
+            <div class="rangeBox">
+                <label for="rate">Rate</label>
+                <input type="range" name="rate" id="rate">
+                <span>1</span>
+            </div>
+            <div class="rangeBox">
+                <label for="volume">Volume</label>
+                <input type="range" name="volume" id="volume">
+                <span>1</span>
+            </div>
+        </menu>
+    </main>
+    <script type='module' src='./javascript/app.js'></script>
+</body>
+</html>
