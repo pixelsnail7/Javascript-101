@@ -10,7 +10,7 @@
 <body>
     <main>
         <div id="container">
-            <div id="display" contenteditable="true"></div>
+            <div id="display" contenteditable="true" spellcheck="false">Type your text...</div>
             <div id="buttons">
                 <button id="speakBtn"><i class="fa-solid fa-volume-high"></i> speak</button>
                 <button id="pauseResumeBtn"><i class="fa-solid fa-pause"></i> pause</button>
@@ -20,18 +20,18 @@
         <menu>
             <div class="rangeBox">
                 <label for="pitch">Pitch</label>
-                <input type="range" name="pitch" id="pitch">
-                <span>1</span>
+                <input type="range" name="pitch" id="pitch" onchange="pitchOutput.innerHTML = this.value" value="1" max="10" min="1" step="0.5">
+                <span id="pitchOutput">1</span>
             </div>
             <div class="rangeBox">
                 <label for="rate">Rate</label>
-                <input type="range" name="rate" id="rate">
-                <span>1</span>
+                <input type="range" name="rate" id="rate" onchange="rateOutput.innerHTML = this.value" value="2" max="2" step="0.10">
+                <span id="rateOutput">2</span>
             </div>
             <div class="rangeBox">
                 <label for="volume">Volume</label>
-                <input type="range" name="volume" id="volume">
-                <span>1</span>
+                <input type="range" name="volume" id="volume" onchange="volumeOutput.innerHTML = this.value" value="0.5" max="1" step="0.10">
+                <span id="volumeOutput">3</span>
             </div>
         </menu>
     </main>
