@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css' integrity='sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==' crossorigin='anonymous' referrerpolicy='no-referrer' />
+    <link rel='stylesheet' href='./styles/style.css'>
+    <title>Celsius to Fahrenheit</title>
+</head>
+<body>
+    <main>
+        <div id="container">
+            <div id="inputs">
+                <div><input type="number" id="celsius" placeholder="Celsius" value="1"><span>°C</span></div>
+                <div><input type="number" id="fahrenheit" placeholder="Fahrenheit" value="33.8"><span>°F</span></div>
+            </div>
+            <button id="convertBtn">Convert <i class="fa-solid fa-arrow-right-arrow-left"></i></button>
+        </div>
+        <div>
+            <h1>Celsius to Fahrenheit</h1>
+            <p>It is a program that converts <b>Celsius</b> to <b>Fahrenheit</b> and vice versa.</p>
+            <br>
+            <h3><spna>0°C</spna> Equals <spna>32°F</spna></h3>
+            <h3><spna>1°C</spna> Equals <spna>33.8°F</spna></h3>
+            <br>
+            <h4>Celsius × 9/5 + 32 = Fahrenheit</h4>
+            <h4>Fahrenheit - 32 × 5/9 = Celsius</h4>
+        </div>
+        <button id="modeBtn">
+            <i class="fa-solid fa-rotate"></i>
+            <span id="now">Fahrenheit</span>
+        </button>
+    </main>
+    <script type='module' src='./javascript/app.js'></script>
+</body>
+</html>
