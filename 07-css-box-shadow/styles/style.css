@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+
+:root {
+    --body-bg: #fefefe;
+    --body-fg: #202020;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'JetBrains Mono', monospace;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    padding: 0.5rem;
+    background-color: var(--body-bg);
+    color: var(--body-fg);
+}
+
+main {
+    position: relative;
+    width: 100%;
+    max-width: 40rem;
+    outline: 1px solid var(--body-fg);
+    padding: 0.5rem;
+    background-color: #dadada;
+}
+
+#display {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px dashed #202020;
+    padding: 0.2rem;
+}
+
+#outerBox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 20rem;
+}
+
+#innerBox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 12rem;
+    width: 12rem;
+}
+
+#colorBox {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    display: flex;
+    flex-direction: column;
+    width: 2.5rem;
+    gap: 0.2rem;
+}
+
+#colorBox button {
+    aspect-ratio: 1/1;
+    border: 1px solid gray;
+    border-radius: 50%;
+}
+
+.editor {
+    border: 1px dashed #202020;
+    padding: 0.2rem;
+    background-color: #bdbdbd;
+}
