@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css' integrity='sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==' crossorigin='anonymous' referrerpolicy='no-referrer' />
+    <link rel='stylesheet' href='./styles/style.css'>
+    <title>Rock Paper Scissors</title>
+</head>
+<body>
+    <main>
+        <section id="gameBoard">
+            <div id="scoreBoard">
+                <div class="board">
+                    <span id="totalScore">0</span>
+                    <label>Total</label>
+                </div>
+                <div class="board">
+                    <span id="winScore">0</span>
+                    <label>Win</label>
+                </div>
+                <div class="board">
+                    <span id="tiesScore">0</span>
+                    <label>Ties</label>
+                </div>
+                <div class="board">
+                    <span id="loseScore">0</span>
+                    <label>Lose</label>
+                </div>
+            </div>
+        </section>
+        <section id="controlsBoard">
+            <div id="controls">
+                <button id="rockBtn"><i class="fa-solid fa-hand-back-fist"></i></button>
+                <button id="paperBtn"><i class="fa-solid fa-hand"></i></button>
+                <button id="scissorsBtn"><i class="fa-solid fa-hand-scissors"></i></button>
+            </div>
+        </section>
+    </main>
+    <script type='module' src='./javascript/app.js'></script>
+</body>
+</html>

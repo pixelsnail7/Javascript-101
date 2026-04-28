@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'JetBrains Mono', monospace;
+}
+
+body {
+    background-color: #202020;
+    color: #fefefe;
+}
+
+#gameBoard {
+    padding: 0.5rem;
+}
+
+#scoreBoard {
+    display: flex;
+    justify-content: flex-end;
+    gap: 0.5rem;
+    padding: 0.2rem;
+    border-radius: 0.5rem;
+}
+
+.board {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+    border: 1px solid lightgray;
+    border-radius: 0.5rem;
+    padding: 0.2rem;
+}
+
+.board span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 3rem;
+    width: 3rem;
+    border-radius: 0.2rem;
+    background-color: #303030;
+    font-size: 2rem;
+}
+
+.board label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.2rem;
+    background-color: #303030;
+    font-size: 0.8rem;
+}
+
+#controlsBoard {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 10rem);
+}
+
+#controls {
+    display: flex;
+    gap: 0.5rem;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    background-color: #303030;
+}
+
+#controls button {
+    aspect-ratio: 1/1;
+    border: none;
+    border-radius: 0.5rem;
+    background-color: #202020;
+    color: lightgray;
+    padding: 0 0.5rem;
+    font-size: 4rem;
+    cursor: pointer
+} 
+
+
+#rockBtn {
+    background-color: sandybrown !important;
+    color: #202020 !important;
+}
+
+#paperBtn {
+    background-color: lightblue !important;
+    color: #202020 !important;
+}
+
+#scissorsBtn {
+    background-color: lightgreen !important;
+    color: #202020 !important;
+}
+
+#rockBtn:active,
+#paperBtn:active,
+#scissorsBtn:active {
+    transform: scale(90%);
+}
