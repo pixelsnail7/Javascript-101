@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+
+:root {
+    --text-color1: #262626;
+    --text--color2: #4D4D4D;
+    --bg1: #eeeeee;
+    --bg2: #E0E0E0;
+    --bg3: #cacaca;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'JetBrains Mono', monospace;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    color: var(--text-color1);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 1.5rem;
+    background-color: var(--bg1);
+}
+
+p {
+    color: var(--text--color2);
+}
+
+#counter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    border-radius: 4rem;
+    padding: 1rem;
+    background-color: var(--bg2);
+    color: var(--text--color1);
+    box-shadow: 2px 2px 8px 0 #8f8f8f70;
+}
+
+#counter button {
+    border: none;
+    border-radius: 2rem;
+    background-color: var(--bg3);
+    color: var(--text--color2);
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+#counter span {
+    font-size: 2rem;
+}
+
+button:active {
+    transform: scale(0.9);
+}
+
+
+#display {
+    padding: 1rem;
+    width: 100%;
+    max-width: 20rem;
+    margin: 0 auto;
+    border-radius: 0.5rem;
+    background-color: var(--bg1);
+    color: var(--text--color2);
+    font-size: 2rem;
+}

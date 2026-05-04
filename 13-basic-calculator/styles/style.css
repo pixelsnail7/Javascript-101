@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+
+:root {
+    --bg0: #ebebeb;
+    --text: #303030;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'JetBrains Mono', monospace;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 20rem;
+    border: 1px solid var(--bg0);
+    border-radius: 0.3rem;
+    padding: 0.5rem;
+    background-color: #f8f8f8;
+    box-shadow: 4px 4px 2px 0 var(--bg0);
+}
+
+#display {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0.5rem;
+    font-size: 2.5rem;
+    height: 4rem;
+    overflow-y: auto;
+    border-radius: 0.5rem;
+    background-color: var(--bg0);
+    color: var(--text);
+    box-shadow: 2px 2px 2px 0 #dadada inset;
+}
+
+#display::-webkit-scrollbar {
+    display: none;
+}
+
+#buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 0.5rem;
+}
+
+#buttons button {
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    background-color: var(--bg0);
+    color: var(--text);
+    font-size: 1.5rem;
+    cursor: pointer;
+    box-shadow: 2px 2px 2px 0 #dadada inset;
+}
+
+#buttons button:active {
+    filter: brightness(95%);
+    transform: translateY(0.2rem) scale(0.96);
+}
+
+#clearBtn {
+    background-color: #f86666 !important;
+    box-shadow: 2px 2px 2px 0 #b94646 inset !important;
+}
+
+#equalBtn {
+    grid-column: span 2;
+    background-color: #c7f866 !important;
+    box-shadow: 2px 2px 2px 0 #add452 inset !important;
+}
